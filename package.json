@@ -2,7 +2,7 @@
   "name": "animal-exhibition",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/huntercordes/animal-exhibition.git",
+  "homepage": "https://huntercordes.github.io/animal-exhibition/",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
