@@ -1,5 +1,6 @@
 .navbar {
-    background-color: navy;
+    background-color: rgb(56, 56, 241);
+    font-family: "passata", sans-serif;
     color: white;
     display: flex;
     align-items: center;

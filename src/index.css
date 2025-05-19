@@ -10,3 +10,12 @@ body {
   margin: 0;
   padding: 0;
 }
+@font-face {
+  font-family: 'AU Passata';
+  src: url('/fonts/AUPassata_rg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'AU Passata', sans-serif;
+}
