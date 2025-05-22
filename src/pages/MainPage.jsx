@@ -5,14 +5,19 @@ import fox from '../assets/fox.png';
 import InfoCardsRow from '../components/InfoCardsRow';
 import EventsRow from '../components/EventsRow';
 import ReviewRow from '../components/ReviewRow';
-
+import styles from '../styles/InfoImageSection.module.css';
 const MainPage = () => {
   return (
     <main>
       <InfoImageSection
         imageSrc={outsideImage}
-        title="Explore the Beetle Exhibit"
-        text="Dive into the world of insects with our unique beetle showcase."
+        title={
+    <>
+      Discover the <span className={styles.highlight}>Wonders of Nature </span> 
+ Today
+    </>
+  }
+        text="Explore our latest exhibition showcasing the beauty and diversity of the natural world. Join us for an unforgettable journey through our collections and interactive displays."
         links={[{ label: 'Learn More', href: '/beetles' }]}
         imageOnLeft={false}
       />

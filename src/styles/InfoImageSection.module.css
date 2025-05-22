@@ -1,9 +1,17 @@
+main{
+    background-color: #ffffff;
+    font-family: "AU Passata", sans-serif;
+}
 .section {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 4rem 2rem;
+  font-family: "AU Passata", sans-serif;
   gap: 2rem;
+}
+.subparagraph{
+  color: #696969;
 }
 
 .left {
@@ -18,15 +26,26 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: flex-start; /* Align top */
+  margin: 0;
+  padding: 0;
 }
+.highlight {
+  color: #003D73; /* Same blue as button or another highlight color */
+}
+.title{
+  font-size: 40px;
+}
+
 
 .image {
   width: 100%;
   max-width: 500px;
   height: auto;
   object-fit: cover;
-  border-radius: 1rem;
+  border-radius: 0; /* No rounding */
 }
+
 
 .content {
   flex: 1;
@@ -36,8 +55,16 @@
 .links a {
   display: inline-block;
   margin-top: 1rem;
-  margin-right: 1rem;
-  color: #1e40af;
-  text-decoration: underline;
+  padding: 0.5rem 1.5rem;
+  background-color: #002241; /* Blue background */
+  color: white;              /* White text */
+  text-decoration: none;     /* Remove underline */
   font-weight: bold;
+  border-radius: 0rem; 
+  transition: background-color 0.3s ease;
 }
+
+.links a:hover {
+  background-color: #0d205f; /* Slightly darker on hover */
+}
+

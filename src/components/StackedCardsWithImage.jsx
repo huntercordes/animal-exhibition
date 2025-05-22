@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from '../styles/StackedCardsWithImage.module.css';
+import { Link } from 'react-router-dom';
+
 
 const StackedCardsWithImage = ({ title, items, imageSrc }) => {
   return (
@@ -17,8 +19,10 @@ const StackedCardsWithImage = ({ title, items, imageSrc }) => {
         </div>
       </div>
       <div className={styles.right}>
-        <img src={imageSrc} alt="section visual" className={styles.image} />
-      </div>
+  <Link to="/mobile">
+    <img src={imageSrc} alt="section visual" className={styles.image} />
+  </Link>
+</div>
     </div>
   );
 };

@@ -6,6 +6,7 @@
   text-align: center;
   flex: 1;
   max-width: 300px;
+  font-family: "AU Passata", sans-serif;
 }
 .card h3 {
   margin-bottom: 0.5rem;
@@ -18,3 +19,16 @@
   color: navy;
   font-weight: bold;
 }
+.icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: navy;
+  font-weight: bold;
+  text-decoration: none;
+}
+

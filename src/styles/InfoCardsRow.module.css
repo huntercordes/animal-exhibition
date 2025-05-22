@@ -4,4 +4,19 @@
   gap: 2rem;
   padding: 2rem 1rem;
   flex-wrap: wrap;
+  font-family: "AU Passata", sans-serif;
+}
+.wrapper {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  color: #1e1e1e;
+   max-width: 500px;    /* Adjust width as needed */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }

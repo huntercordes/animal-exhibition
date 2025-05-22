@@ -5,19 +5,33 @@ import styles from '../styles/EventsRow.module.css';
 
 const EventsRow = () => {
   const events = [
-    {
-      imageSrc: '/assets/event1.png',
-      title: 'Night at the Museum',
-      description: 'Experience the museum after dark with guided flashlight tours and activities.',
-      link: { href: '#', label: 'Read more' },
+  {
+    date: {
+      dayOfWeek: 'Sat',
+      dayNumber: '25',
+      month: 'May',
+      year: '2025',
     },
-    {
-      imageSrc: '/assets/event2.png',
-      title: 'Beetle Discovery Day',
-      description: 'Join us for a day of hands-on activities focused on insects and beetles.',
-      link: { href: '#', label: 'Explore Event' },
+    title: 'Night at the Museum',
+    location: 'Museum Hall A',
+    description: 'Experience the museum after dark with guided flashlight tours and activities.',
+    ticketsLeft: 34,
+    soldOut: false,
+  },
+  {
+    date: {
+      dayOfWeek: 'Sun',
+      dayNumber: '26',
+      month: 'May',
+      year: '2025',
     },
-  ];
+    title: 'Beetle Discovery Day',
+    location: 'Museum Garden',
+    description: 'Join us for a day of hands-on activities focused on insects and beetles.',
+    ticketsLeft: 0,
+    soldOut: true,
+  },
+];
 
   return (
     <section className={styles.eventsSection}>
@@ -29,8 +43,14 @@ const EventsRow = () => {
         {events.map((event, index) => (
           <Event
             key={index}
-            imageSrc={event.imageSrc}
+            date={event.date}
+            dayNumber={event.date.dayNumber}
+            dayOfWeek={event.date.dayOfWeek}
+            month={event.date.month}
+            year={event.date.year}
             title={event.title}
+            ticketsLeft={event.ticketsLeft}
+            soldOut={event.soldOut}
             description={event.description}
             link={event.link}
           />

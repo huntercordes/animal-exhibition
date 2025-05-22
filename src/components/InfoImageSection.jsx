@@ -8,8 +8,8 @@ const InfoImageSection = ({ imageSrc, title, text, links, imageOnLeft = true }) 
         <img src={imageSrc} alt={title} className={styles.image} />
       </div>
       <div className={styles.content}>
-        <h2>{title}</h2>
-        <p>{text}</p>
+        <h2 className={styles.title}>{title}</h2>
+        <p className={styles.subparagraph}>{text}</p>
         <div className={styles.links}>
           {links.map((link, index) => (
             <a key={index} href={link.href}>
