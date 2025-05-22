@@ -1,11 +1,17 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import MainPage from './pages/MainPage';
+import DigitalJournal from './pages/DigitalJournalPage';
 
 function App() {
-  return (
-    <>
+   return (
+    <Router basename="/animal-exhibition">
       <Navbar />
-      {/* Your other components go here */}
-    </>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/journal" element={<DigitalJournal />} />
+      </Routes>
+    </Router>
   );
 }
 

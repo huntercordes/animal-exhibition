@@ -1,0 +1,49 @@
+.reviewSection {
+  text-align: center;
+  padding: 3rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.stars {
+  color: #fbc02d;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.reviewText {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.reviewerInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.reviewerDetails {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.reviewerDetails span {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.trustpilotLogo {
+  height: 30px;
+}

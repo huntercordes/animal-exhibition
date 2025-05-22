@@ -1,0 +1,43 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  gap: 2rem;
+}
+
+.left {
+  flex-direction: row;
+}
+
+.right {
+  flex-direction: row-reverse;
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.content {
+  flex: 1;
+  padding: 1rem;
+}
+
+.links a {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  color: #1e40af;
+  text-decoration: underline;
+  font-weight: bold;
+}

@@ -1,0 +1,7 @@
+.cardRow {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  flex-wrap: wrap;
+}

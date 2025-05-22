@@ -1,0 +1,51 @@
+.container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.mainTitle {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.timelineItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.verticalLine {
+  width: 2px;
+  height: 40px;
+  background-color: black;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+
+.content {
+  text-align: center;
+}
+
+.itemTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem;
+}
+
+.description {
+  font-size: 0.95rem;
+  margin: 0 auto;
+  max-width: 600px;
+}
