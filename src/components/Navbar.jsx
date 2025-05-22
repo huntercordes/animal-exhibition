@@ -6,7 +6,9 @@ import logo from '../assets/logo.png'; // Adjust the path based on where your im
 function Navbar() {
   return (
     <nav className={styles.navbar}>
+      <Link to="/">
       <img src={logo} alt="Logo" className={styles.logo} />
+      </Link>
       <ul className={styles.navItems}>
         <li>Exhibition</li>
         <li>Knowledge & Research</li>
