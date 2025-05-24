@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles/InfoCards.module.css';
-import { ArrowRight } from 'lucide-react'; // If you're using lucide icons
+import { ArrowRight } from 'lucide-react';
 
 const InfoCards = ({ icon, title, text, link }) => {
   return (

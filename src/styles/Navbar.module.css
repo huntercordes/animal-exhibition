@@ -1,12 +1,12 @@
 .navbar {
-  background-color:#002241;
+  background-color: #002241;
   font-family: "AU Passata", sans-serif;
   font-size: 14px;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   height: 60px;
   position: sticky;
   top: 0;
@@ -15,18 +15,76 @@
 
 .logo {
   height: 30px;
-  margin-right: 2rem; /* space between logo and nav items */
 }
 
 .navItems {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 1.8rem;
+  gap: 1.5rem;
   margin: 0;
   padding: 0;
 }
-  
+
 .navItems li {
   cursor: pointer;
+}
+
+/* Mobile styles */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Responsive rules */
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  .navItems {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #002241;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+    display: none;
+  }
+
+  .navItems.open {
+    display: flex;
+  }
+
+  .navItems li {
+    width: 100%;
+    padding: 1rem 0;
+  }
+}
+.navItems a {
+  color: inherit;       /* Use the color of the parent (white in your navbar) */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Optional: add hover/focus styles if you want */
+.navItems a:hover,
+.navItems a:focus {
+  text-decoration: underline; /* underline on hover/focus if you like */
+  color: #ddd; /* or any subtle highlight color */
 }
