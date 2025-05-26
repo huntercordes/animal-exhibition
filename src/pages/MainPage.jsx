@@ -27,7 +27,7 @@ const MainPage = () => {
     imageSrc={placeholder}
         title="Explore Our Digital Journal"
         text="Stay informed with the latest research, discoveries, and natural science insights from the Naturhistorisk Museum. Dive into peer reviewed articles, fieldwork reports, and expert contributions all in one accessible digital platform."
-        links={[{ label: 'Learn More', href: '/mobile' }]}
+        links={[{ label: 'Learn More', href: '/animal-exhibition/mobile' }]}
         imageOnLeft={true}
       />
       <ReviewRow />
