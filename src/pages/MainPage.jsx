@@ -18,7 +18,7 @@ const MainPage = () => {
     </>
   }
         text="Explore our latest exhibition showcasing the beauty and diversity of the natural world. Join us for an unforgettable journey through our collections and interactive displays."
-        links={[{ label: 'Learn More', href: '/beetles' }]}
+        links={[{ label: 'Learn More', to: '/journal' }]}
         imageOnLeft={false}
       />
         <InfoCardsRow />
@@ -27,7 +27,7 @@ const MainPage = () => {
     imageSrc={placeholder}
         title="Explore Our Digital Journal"
         text="Stay informed with the latest research, discoveries, and natural science insights from the Naturhistorisk Museum. Dive into peer reviewed articles, fieldwork reports, and expert contributions all in one accessible digital platform."
-        links={[{ label: 'Learn More', href: '/animal-exhibition/mobile' }]}
+        links={[{ label: 'Learn More', to: '/mobile' }]}
         imageOnLeft={true}
       />
       <ReviewRow />

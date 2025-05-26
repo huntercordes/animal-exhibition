@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from '../styles/InfoImageSection.module.css';
+import { Link } from 'react-router-dom';
+
 
 const InfoImageSection = ({ imageSrc, title, text, links, imageOnLeft = true }) => {
   return (
@@ -11,11 +13,9 @@ const InfoImageSection = ({ imageSrc, title, text, links, imageOnLeft = true }) 
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.subparagraph}>{text}</p>
         <div className={styles.links}>
-          {links.map((link, index) => (
-            <a key={index} href={link.href}>
-              {link.label}
-            </a>
-          ))}
+          {links.map(link => (
+  <Link key={link.to} to={link.to}>{link.label}</Link>
+))}
         </div>
       </div>
     </section>

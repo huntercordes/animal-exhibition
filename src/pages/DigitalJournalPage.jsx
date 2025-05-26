@@ -1,6 +1,8 @@
 import InfoImageSection from '../components/InfoImageSection';
 import styles from '../styles/DigitalJournal.module.css';
 import ImageGridSection from '../components/ImageGridSection';
+import { Link } from 'react-router-dom';
+
 import forestgrid from '../assets/forestgrid.png';
 import savannagrid from '../assets/savannagrid.png';
 import oceangrid from '../assets/oceangrid.png';
@@ -66,7 +68,7 @@ const DigitalJournal = () => {
       imageSrc={oceanframe}
       title="Explore the Wild"
       text="Dive into four unique biomes and discover the animals that live there. Tap to learn their stories, behaviors, and fun facts — all in one interactive journey."
-      links={[{ label: 'Discover', href: '/animal-exhibition/mobile' }]}
+      links={[{ label: 'Link to Example Page', to: '/mobile' }]}
       imageOnLeft={true}
     />
     <VerticalTimelineSection
