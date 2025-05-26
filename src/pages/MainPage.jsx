@@ -36,3 +36,4 @@ const MainPage = () => {
 };
 
 export default MainPage;
+/*another comment to test the code snippet*/
