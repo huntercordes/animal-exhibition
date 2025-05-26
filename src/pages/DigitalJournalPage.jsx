@@ -66,7 +66,7 @@ const DigitalJournal = () => {
       imageSrc={oceanframe}
       title="Explore the Wild"
       text="Dive into four unique biomes and discover the animals that live there. Tap to learn their stories, behaviors, and fun facts — all in one interactive journey."
-      links={[{ label: 'Discover', href: '/animal-exhibition/mobile' }]}
+      links={[{ label: 'Discover', href: '/mobile' }]}
       imageOnLeft={true}
     />
     <VerticalTimelineSection
